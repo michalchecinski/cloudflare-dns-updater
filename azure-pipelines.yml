@@ -53,4 +53,4 @@ stages:
           inputs:
             sshEndpoint: 'ssh-pi'
             runOptions: inline
-            inline: 'cd /home/pi/cloudflare-dns-updater && docker-compose up --build -d'
+            inline: 'cd /home/pi/cloudflare-dns-updater && docker-compose up --build -d 2> /dev/null'
