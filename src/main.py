@@ -4,6 +4,7 @@ import requests
 import json
 import subprocess
 
+
 def get_config():
     with open('/app/secrets.json') as json_file:
         return json.load(json_file)
