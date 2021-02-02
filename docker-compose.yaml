@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  cloudflare-dns-updater:
+    container_name: cloudflare-dns-updater
+    restart: always
+    build: .
+    volumes:
+      - ./secrets.json:/app/secrets.json
